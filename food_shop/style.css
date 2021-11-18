@@ -1,0 +1,9 @@
+.list { max-height: 30vh; overflow-y: auto; padding: 20px; border: solid 1px #ddd; }
+.list > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5px;
+}
+.list > div:nth-child(even) {
+    background: #eee;
+}

@@ -1,0 +1,78 @@
+* {
+
+  box-sizing: border-box;
+}
+body {    
+  background: rgb(21, 32, 43);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  font-size: .85rem;
+  line-height: 1.2rem;
+}
+a { color: rgb(27, 149, 224); text-decoration: none;}
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+textarea {
+  background: rgb(21, 32, 43);
+  border: none;
+  border-bottom: solid 1px rgba(255,255,255, .1);
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+button {
+  color: #fff;
+  background:  rgb(27, 149, 224);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+.avatar {
+  background: #fff;
+  color:  rgb(27, 149, 224);
+  width: 60px;
+  height: 60px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+  overflow: hidden;
+}
+.avatar img { width: auto; height: 60px;}
+
+.messages {
+
+}
+.message {
+  display: flex;
+  background: rgba(255,255,255, .05);
+  border-bottom: solid 1px rgba(255,255,255, .1);
+  padding: 20px;
+}
+
+.message .content {
+  flex-grow: 1;
+}
+.message .content .info {
+  color: rgb(136, 153, 166);
+  font-size: .75rem;
+  margin-bottom: 10px;
+}
+.message .content img {
+  width: 300px; float:left; margin-right: 20px;
+}

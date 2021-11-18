@@ -1,0 +1,12 @@
+{
+    "name": "dieterdeweirdt/kinepolis",
+    "authors": [
+        {
+            "name": "Dieter De Weirdt",
+            "email": "dieter.de.weirdt@trendsco.com"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^7.1"
+    }
+}

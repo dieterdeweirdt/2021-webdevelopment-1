@@ -1,0 +1,20 @@
+html { }
+body { background: #000; text-align: center; font-family: helvetica, sans-serif; height: 100%;  }
+h1 { font-size: 4.5rem; color: #FFF; text-align: center; text-shadow: 2px 2px 3px rgba(0,0,0,.3); width: 100%;  }
+h1 span { display: inline-block; border-radius: 5px; background: rgba(0,0,0,.2); padding: 7px 20px; margin-top: 10px; white-space: nowrap; }
+h1 a { text-decoration: none; color: #FFF; }
+h1 a:hover span { background: rgba(0,0,0,.4); }
+h2 { font-size: 3rem; color: rgba(0,0,0,.5); }
+h2 a { color: rgba(0,0,0,.5); }
+section { position: absolute; top: 15%; width: 80%; margin: 0 10%;  }
+footer { font-size: 2rem; position: absolute; bottom: 20px; width: 80%; left: 10%; }
+.btn { font-size: 2rem; background: rgba(0,0,0,.4); color: #FFF; display: inline-block; padding: 10px 15px; border-radius: 5px; border:none; text-decoration: none; }
+header h2 { float: right; margin: 10px; font-size: 1rem; }
+
+form { font-size: 1.6rem;  }
+form label { display: block; }
+form input, form select {  width: 100%; padding: 10px 15px; border-radius: 3px; border: none; font-size: 1.6rem; background: rgba(255,255,255,.7); 
+-webkit-appearance:none;
+-moz-appearance:none;
+appearance:none;
+}

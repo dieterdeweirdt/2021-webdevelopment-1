@@ -1,0 +1,95 @@
+body { background: #222; font-family: helvetica, sans-serif; color:#fff; line-height: 1.5em; }
+h1 { font-size: 2.5rem; color: hsl(48, 53%, 53%); text-align: center; }
+h1 span { display: inline-block; border-radius: 5px; background: rgba(0,0,0,.2); padding: 7px 20px; margin-top: 10px; white-space: nowrap; }
+a { text-decoration: underline; color: hsl(48, 53%, 53%);  }
+a:hover { color: hsl(48, 53%, 70%);  }
+h2 { font-size: 1.8rem; color: hsl(48, 53%, 53%); }
+section { max-width: 920px; margin: 0 auto 40px; background: #333; padding: 25px;  }
+
+.filter { display: flex; justify-content: space-between; }
+input[type=text] {
+    font-size: 1rem;
+    background: transparent;
+    color: #fff;
+    border: solid 1px hsl(48, 53%, 53%);
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.view_switch {
+    display: flex;
+    justify-content: flex-end;
+}
+.view_switch a {
+    display: block;
+    padding: 5px;
+}
+
+.file-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.file-list .file { 
+    width: 100%;
+    display: flex; justify-content: space-between;
+    padding: 15px 0; margin: 20px 0; border-bottom: solid 1px #444; 
+}
+
+.file-list.list .file.buttons { width: 200px; text-align: right;}
+.file-list.list .icon { width: 120px;  }
+
+
+.file-list.grid {
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.file-list.grid .file {
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon span { margin-left: 12px;  position: relative; display: block; padding: 60px 15px 15px;  text-align:center; width: 40px; 
+    background-color: #666; color:#333; text-transform: uppercase; border-radius: 5px; }
+.icon span:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0 30px 30px 0;
+    border-style: solid;
+    border-color: rgba(0,0,0,.2) #333;
+    border-bottom-left-radius: 5px;
+    }
+
+
+.icon.icon-png span { background-color: hsl(80, 60%, 60%); }
+.icon.icon-pdf span { background-color: hsl(0, 60%, 60%);; }
+.icon.icon-doc span { background-color: hsl(200, 60%, 60%);; }
+.icon.icon-jpg span { background-color: hsl(160, 60%, 60%);; }
+
+.icon img { max-width: 90px; height: auto; border-radius: 5px; border: solid 1px hsl(48, 53%, 53%); ; }
+
+.file_info { flex-grow: 1;}
+.btn { font-size: 1rem; background-color: hsl(48, 53%, 53%); color: #333; display: inline-block; padding: 5px 10px; border-radius: 3px; border: solid 1px hsl(48, 53%, 53%); ; text-decoration: none; }
+.btn:hover { background-color: hsl(48, 53%, 45%); color: #000;}
+.input { border: solid 1px #BBB; border-radius: 5px; padding: 10px 15px; }
+
+.paging a {
+    display: inline-block;
+    padding: 2px 7px;
+    border:solid 1px hsl(48, 53%, 53%);
+    color: hsl(48, 53%, 53%);
+    text-decoration: none;
+}
+
+.paging a.current {
+
+    background: hsl(48, 53%, 53%);
+    color: #222;
+
+}
