@@ -1,0 +1,20 @@
+* { box-sizing: border-box;}
+html {
+    background-color: #eee;
+    padding: 25px;
+}
+body { 
+    max-width: 800px; 
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    background-color: #fff;
+    padding: 25px;
+}
+
+a { color: hsl(40, 74%, 45%)}
+
+input, textarea { border: solid 1px #ccc; border-radius: 5px; padding: 10px 15px; width: 100%}
+textarea { height: 200px;}
+
+button { background: hsl(40, 74%, 45%);  border-radius: 5px; padding: 10px 15px; border: none; }

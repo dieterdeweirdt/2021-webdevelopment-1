@@ -1,0 +1,1 @@
+<?php include 'views/products/_partial/products_grid.php'; ?>

@@ -1,15 +1,22 @@
 <?php
 
-class MovieController {
+class MovieController extends PageController {
 
     public function index() {
-        echo 'Dit is de lijst pagina controller';
+        $movie = new Movie();
+        $movies = $movie->getAll();
+
+        $this->loadView('movie/list', [
+            'movies' => $movies
+        ]);
     }
 
     public function detail($slug) {
         $movie = new Movie();
         $movie->getById(1);
-        print_r($movie);
-        include 'views/movie/detail.php';
+
+        $this->loadView('movie/detail', [
+            'movie' => $movie
+        ]);
     }
 }
