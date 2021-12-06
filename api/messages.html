@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+</head>
+<body>
+    <h1>Messages</h1>
+
+    <div id="content"></div>
+
+    <button id="load_more">Load more...</button>
+
+
+    <script>
+        let page = 0;
+
+        function getMessages(){
+            page++;
+            fetch('./api/get_messages.php?page=' + page, {
+                method: 'get'
+            }).then( response => {
+                return response.json();
+            }).then ( json => {
+                json.forEach(item => {
+                    document.getElementById('content').innerHTML += '<li>' + item.message + '</li>';
+                    //console.log(item.message);
+                });
+            });
+        }
+
+        getMessages();
+
+        document.getElementById('load_more').addEventListener('click', getMessages);
+
+    </script>
+
+</body>
+</html>

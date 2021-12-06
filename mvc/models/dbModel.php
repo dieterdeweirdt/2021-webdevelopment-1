@@ -4,7 +4,15 @@ class dbModel {
     protected $table;
     protected $pk;
 
-    public function getAll() {
+    public static function __callStatic ($method, $arg) {
+        $obj = new static;
+        $result = call_user_func_array (array ($obj, $method), $arg);
+        if (method_exists ($obj, $method))
+            return $result;
+        return $obj;
+    }
+
+    private function getAll() {
         global $db;
 
         $stmnt = $db->prepare('SELECT * FROM `' . $this->table . '`'); 
@@ -19,7 +27,7 @@ class dbModel {
 
     }
 
-    public function getById($id) {
+    private function getById($id) {
         global $db;
         
         $stmnt = $db->prepare('SELECT * FROM `' . $this->table . '` WHERE ' . $this->pk . ' = ?'); 
@@ -35,9 +43,10 @@ class dbModel {
 
             }
         } 
+        return $this;
     }
 
-    public function update($fields = []) {
+    private function update($fields = []) {
         //TODO update with the $_POST values
 
         echo 'Dit is de update van dbModel';
