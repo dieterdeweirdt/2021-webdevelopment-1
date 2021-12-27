@@ -1,0 +1,13 @@
+{
+    "name": "dieterdeweirdt/week_12",
+    "authors": [
+        {
+            "name": "Dieter De Weirdt",
+            "email": "dieter.de.weirdt@trendsco.com"
+        }
+    ],
+    "require": {
+        "chillerlan/php-qrcode": "^4.3",
+        "spatie/image": "^2.0"
+    }
+}

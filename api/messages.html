@@ -13,12 +13,12 @@
 
     <button id="load_more">Load more...</button>
 
-
     <script>
         let page = 0;
 
         function getMessages(){
             page++;
+            //Doe een fetch naar de API
             fetch('./api/get_messages.php?page=' + page, {
                 method: 'get'
             }).then( response => {
